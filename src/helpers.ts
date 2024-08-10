@@ -25,7 +25,7 @@ export default async function serveResult(request: Request): Promise<Response> {
       'Access-Control-Expose-Headers': 'Age, X-Powered-By, X-Response-Time',
       'Age': 0,
       'CF-Cache-Status': 'MISS',
-      'Cache-Control': 'public, max-age=30, s-maxage=43200, proxy-revalidate, immutable',
+      'Cache-Control': 'public, max-age=30, s-maxage=120, proxy-revalidate, immutable',
       'Content-Type': 'application/json; charset=utf-8',
       'X-Powered-By': '@ihsangan/valid'
     }
