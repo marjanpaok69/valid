@@ -9,7 +9,7 @@ export default async function ag(id: number): Promise<Result> {
     body
   });
   const data = await response.json();
-  if (data.errorCode !== "-100") {
+  if (data.confirmationFields.username) {
     return {
       success: true,
       game: 'Aether Gazer',
@@ -17,4 +17,4 @@ export default async function ag(id: number): Promise<Result> {
       name: data.confirmationFields.username
     };
   }
-}
+} 
