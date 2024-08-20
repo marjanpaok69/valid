@@ -17,4 +17,10 @@ export default async function ag(id: number): Promise<Result> {
       name: data.confirmationFields.username
     };
   }
+  else {
+    return {
+      success: false,
+      message: "Not found"
+    };
+  }
 } 
